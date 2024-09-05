@@ -1,5 +1,3 @@
-import { Button } from "@/components/ui/button";
-
 const Hero = () => {
   return (
     <>
@@ -13,7 +11,7 @@ const Hero = () => {
           src="/assets/mobile-header-2.png"
           className="w-5/12 object-cover"
         />
-        <div className="absolute inset-0 flex flex-col justify-center items-center  px-6">
+        <div className="absolute inset-0 flex flex-col justify-center items-center text-white px-6">
           <h1 className="text-3xl font-bold text-center leading-tight w-1/2">
             Multicoloured Tie-dye Sweater
           </h1>
@@ -23,10 +21,6 @@ const Hero = () => {
           <button className="mt-10 px-6 py-2 bg-transparent border border-white text-white rounded font-bold">
             Shop Now
           </button>
-
-          <Button className="text-white" variant="outline" size={"lg"}>
-            Shop Now
-          </Button>
         </div>
       </section>
 
@@ -46,9 +40,7 @@ const Hero = () => {
             </button>
           </div>
         </div>
-        <div className="w-1/2 h-[80vh] bg-cover bg-no-repeat bg-[url('/assets/desktop-header-2.png')]">
-          {/* Sağ taraf sadece görsel */}
-        </div>
+        <div className="w-1/2 h-[80vh] bg-cover bg-no-repeat bg-[url('/assets/desktop-header-2.png')]"></div>
       </section>
     </>
   );

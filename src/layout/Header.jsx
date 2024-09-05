@@ -1,3 +1,7 @@
+// src/layout/Header.js
+import React from "react";
+import { Link } from "react-router-dom";
+
 const Header = () => {
   return (
     <header className="bg-white shadow-md">
@@ -17,54 +21,57 @@ const Header = () => {
         </div>
       </div>
       <nav className="flex flex-col items-center py-4 space-y-4 lg:hidden text-gray-500 text-2xl">
-        <a href="#home" className="">
+        <Link to="/" className="">
           Home
-        </a>
-        <a href="#product" className="">
+        </Link>
+        <Link to="/shop" className="">
+          Shop
+        </Link>
+        <Link to="#product" className="">
           Product
-        </a>
-        <a href="#pricing" className="">
+        </Link>
+        <Link to="#pricing" className="">
           Pricing
-        </a>
-        <a href="#contact" className="">
+        </Link>
+        <Link to="#contact" className="">
           Contact
-        </a>
+        </Link>
       </nav>
 
       {/* Masaüstü Menü */}
       <div className="hidden lg:flex justify-between items-center px-8 py-4">
         <nav className="flex space-x-8 ml-60 gap-5 text-[#737373] font-bold">
-          <div className="text-xl lg:text-2xl font-bold pr-24 pr- text-black">
+          <div className="text-xl lg:text-2xl font-bold pr-24 text-black">
             BrandName
           </div>
-          <a href="#home" className="">
+          <Link to="/" className="">
             Home
-          </a>
-          <a href="#shop" className="">
+          </Link>
+          <Link to="/shop" className="">
             Shop
-          </a>
-          <a href="#about" className="">
+          </Link>
+          <Link to="#about" className="">
             About
-          </a>
-          <a href="#blog" className="">
+          </Link>
+          <Link to="#blog" className="">
             Blog
-          </a>
-          <a href="#contact" className="">
+          </Link>
+          <Link to="#contact" className="">
             Contact
-          </a>
-          <a href="#pages" className="">
+          </Link>
+          <Link to="#pages" className="">
             Pages
-          </a>
+          </Link>
         </nav>
         <div className="flex space-x-4 text-[#23A6F0] gap-5 mr-60">
           <button className="text-lg">
             <i className="fas fa-user"></i> Login / Register
           </button>
           <button>
-            <i className="fas fa-search  text-xl"></i>
+            <i className="fas fa-search text-xl"></i>
           </button>
           <button>
-            <i className="fas fa-shopping-cart  text-xl"></i>
+            <i className="fas fa-shopping-cart text-xl"></i>
           </button>
           <button>
             <i className="fas fa-heart"></i>

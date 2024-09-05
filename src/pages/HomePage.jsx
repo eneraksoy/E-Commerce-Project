@@ -4,6 +4,7 @@ import Brands from "../components/Brands";
 import Hero from "../components/Hero";
 import ProductCard from "../components/ProductCard";
 import BestServices from "@/components/BestServicex";
+import FeaturedPosts from "@/components/FeaturedPosts";
 
 const HomePage = () => {
   return (
@@ -14,6 +15,7 @@ const HomePage = () => {
       <BestSeller />
       <WhatWeDo />
       <BestServices />
+      <FeaturedPosts />
     </div>
   );
 };
